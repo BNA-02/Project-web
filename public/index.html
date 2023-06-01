@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titre">Application Todo list en javascript</h1>
+  <br>
+  <div id="myDIV" class="header">
+    <input type="text" id="myInput" placeholder="To do...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    <select id="display" name="display" onchange="displayTasks()">
+      <option value="All">All</option>
+      <option value="checked">Checked</option>
+      <option value="unchecked">Unchecked</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <br>
+  <ul id="myUL"></ul>
+
+  <script src="myScript.js"></script>
+</body>
+</html>

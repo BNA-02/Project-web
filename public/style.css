@@ -1,0 +1,120 @@
+/* Centrer le titre et définir sa couleur */
+.titre {
+  text-align: center;
+  color: white;
+}
+
+/* Définir la couleur du background */
+body {
+  background: linear-gradient(to right, #5c5ce2, rgb(248, 86, 248));
+}
+
+/* Inclure le padding et la bordure dans la largeur et la hauteur totale d'un élément */
+* {
+  box-sizing: border-box;
+}
+
+/* Supprimer les marges et les paddings de la liste */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styler les éléments de la liste */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* Mettre en couleur les éléments impairs de la liste (effet de zébrure) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Fond plus foncé au survol */
+ul li:hover {
+  background: #ddd;
+}
+
+/* Au clic, ajoute une couleur de fond et raye le texte */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Styler le bouton close */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Styler le bouton check */
+.check {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  padding: 11px 16px 12px 16px;
+}
+
+.check:hover {
+  background-color: #33fd00;
+  color: white;
+}
+
+/* Styler l'input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 50%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Styler le bouton "Add" */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+/* Styler la liste déroulante */
+select {
+  position: absolute;
+  right: 10px;
+  padding: 9.5px;
+  background: #d9d9d9;
+  width: 20%;
+  border: none;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
